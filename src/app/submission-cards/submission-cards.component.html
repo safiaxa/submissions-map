@@ -1,0 +1,26 @@
+<!-- submission-cards.component.html -->
+
+  
+<!-- submission-cards.component.html -->
+<div class="card-container">
+  <div class="submission-card" *ngFor="let card of submissionCards">
+    <div class="card-body">
+      <div class="title-tag-container">
+        <div class="header">{{ card.title }}</div>
+        <span class="tag" [ngClass]="card.status">
+          <img src="../../assets/circle.svg" alt="Circle Icon" class="circle-icon" [ngClass]="['circle-icon-' + card.status]">
+          {{ card.text }}
+        </span>
+      </div>
+      <p><span class="gray-text">From: </span><span class="text">{{ card.from }}</span></p>
+      <p><span class="gray-text">To: </span><span class="text">{{ card.to }}</span></p>
+      <p>
+        <span class="gray-text">Due Date: </span>
+        <span [ngClass]="{'past-due': card.dueDate < today}" class="due-date">
+            {{ card.dueDate | date:'dd MMMM':'UTC' }}
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+

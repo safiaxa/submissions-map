@@ -1,0 +1,88 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #288cdc; 
+    padding: 15px;
+    color: #fff;
+    float: left;
+    width: 88%; 
+    margin: 0 auto; 
+    height: 30px;
+    margin-bottom: 55px; 
+    margin-right: 70px; 
+  }
+  
+  .logo {
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-family:  Helvetica;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .nav {
+    display: flex; 
+    margin-left: auto; 
+  }
+  .nav button {
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 15px; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s; 
+    padding: 17px 12px; 
+  }
+  
+  .nav button.submissions {
+    background-color: #1773bb; 
+  }
+  .nav button:hover {
+    background-color: #1773bb;
+    color: #fff;
+    padding: 17px 12px; 
+  }
+  
+  .nav button img {
+    margin-right: 5px;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    
+  }
+  
+  .icons span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .white-svg {
+    filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(325deg) brightness(108%) contrast(101%);
+    width: 1.5em; 
+    height: 1.5em;
+    vertical-align: middle;
+  }
+
+  .white-svg1 {
+    filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(325deg) brightness(108%) contrast(101%);
+    width: 1.2em; 
+    height: 1.2em;
+    vertical-align: middle;
+  }
+
+  .heading {
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family:  Helvetica;
+    margin-left: 15px;
+}

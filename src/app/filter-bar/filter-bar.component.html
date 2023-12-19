@@ -1,0 +1,39 @@
+
+<div class="filter-bar">
+
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Search" class="filter-input" />
+  
+
+    <div class="filter-dropdown">
+      <select style="color:gray" [(ngModel)]="selectedTitle" (change)="applyFilters()">
+        <option value="">Select Form</option>
+        <option style="color:black" *ngFor="let title of uniqueTitles" [value]="title">{{ title }}</option>
+      </select>
+    </div>
+  
+   
+    <div class="filter-dropdown">
+      <select style="color:gray" [(ngModel)]="selectedStatus" (change)="applyFilters()">
+        <option value="">Select Status </option>
+        <option style="color:black" *ngFor="let text of uniqueStatus" [value]="text">{{ text }}</option>
+      </select>
+    </div>
+  
+
+    <div class="filter-datepicker">
+      <input style="color:gray" [(ngModel)]="selectedDate" type="date" (change)="applyFilters()" />
+    </div>
+
+    <div class="toggle-switch" (click)="toggleMapView()">
+        <div class="map-list" [ngClass]="{ 'active': mapView }">Map</div>
+        <div class="map-list" [ngClass]="{ 'active': !mapView }">List</div>
+      </div>
+
+    <button class="export-button" (click)="exportToHTML()">
+        <img src="../../assets/export-icon.svg" alt="Export Icon" class="export-icon">
+        Export
+      </button>
+      
+</div>
+
+  

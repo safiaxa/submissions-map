@@ -1,0 +1,88 @@
+
+.filter-bar {
+    display: flex;
+    background-color: white; 
+    border-radius: 8px; 
+    margin-top: 10px;
+    padding: 10px; 
+  }
+  
+  .filter-input,
+  .filter-dropdown,
+  .filter-datepicker {
+    margin-right: 40px; 
+  }
+  
+  .filter-dropdown label,
+  .filter-datepicker label {
+    margin-left: 10px; 
+  
+  }
+  
+  .filter-input {
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+  }
+  
+  .filter-dropdown select,
+  .filter-datepicker input {
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+  }
+  
+  .toggle-switch {
+    display: flex;
+    align-items: center;
+    margin-left: 240px;
+    cursor: pointer;
+    background-color: #1773bb;
+    border-radius: 5px;
+    border: 1px solid gray;
+    overflow: hidden;
+  }
+  
+  .map-list {
+    box-sizing: border-box;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    width: 65px;
+    color: white;
+  }
+  
+  .map-list.active {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 65px;
+    background-color: white;
+
+    color: black;
+  }
+
+  .export-button {
+    background-color: white;
+    border: none;
+    color: #1773bb;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'Helvetica', sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 2px;
+    
+  }
+  
+  .export-icon {
+   
+    filter: invert(51%) sepia(73%) saturate(7081%) hue-rotate(190deg) brightness(87%) contrast(82%);
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 1.25em; 
+    height: 1.25em;
+  }
