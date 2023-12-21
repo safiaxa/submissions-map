@@ -1,0 +1,12 @@
+#map.small-map {
+    height: 550px;
+    width: 875px;
+    float: right;
+    margin-right: 150px; 
+    margin-top: 25px;
+    padding: 200px;
+    box-sizing: border-box;
+  }
+
+
+  
